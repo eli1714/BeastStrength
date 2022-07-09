@@ -115,7 +115,8 @@ function setEmailCookie(res, email) {
   res.cookie("email", email, {
     httpOnly: true,
     secure: true,
-    maxAge: COOKIE_EXPIRATION
+    maxAge: COOKIE_EXPIRATION,
+    sameSite: "None"
   })
 }
 
