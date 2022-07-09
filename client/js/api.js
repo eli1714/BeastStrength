@@ -27,7 +27,7 @@ export function downloadItem(itemId) {
 }
 
 export function purchaseItem(itemId) {
-  apiInstance
+  return apiInstance
     .post("/create-checkout-session", {
       itemId
     })
